@@ -23,3 +23,11 @@
     height: 30px;
     padding: 8px;
 }
+
+/*  */
+.modal-header{
+    position: relative;
+}
+.modal-close-btn{
+    background-color: red;
+}
