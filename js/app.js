@@ -19,8 +19,8 @@ const aiUniverseData = async () => {
 
 // Data pass to the Frontend;
 const displayData = (data) => {
-     //console.log(data);
-
+     console.log(data);
+    
     // Loading Spinner Activity;
     const loadingSpinnerSection = document.getElementById('loadingSpinner');
     const loadingSpinner = document.getElementById('loading-spinner');
