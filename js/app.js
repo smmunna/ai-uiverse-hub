@@ -62,7 +62,7 @@ const displayData = (data) => {
             
         </div>
         <div>
-            <button><span class="right-arrow"><img src="../images/right-arrow.png" /></span></button>
+            <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
         </div>
             </div>
           </div>

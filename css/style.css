@@ -14,3 +14,12 @@
 .publish-data{
     padding-top: 2px;
 }
+.right-arrow{
+    border: hidden;
+    background-color: rgba(255, 0, 0, 0.174);
+    border-radius: 50%;
+}
+.right-arrow img{
+    height: 30px;
+    padding: 8px;
+}
