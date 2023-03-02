@@ -4,12 +4,16 @@ const aiUniverseData = async() =>{
     try {
         const res = await fetch(url)
         const data = await res.json()
-        console.log(data.data.tools)
+        displayData(data.data.tools)
     } catch (error) {
         console.log('Some Erros occurs:'+error);
     }
 }
 
+// Data pass to the Frontend;
+const displayData = (data) =>{
+    console.log(data);
+}
 
 // Call the aiUniverseData function;
 aiUniverseData();
