@@ -9,9 +9,9 @@ const aiUniverseData = async () => {
 
         if(data.data.tools.length>6){
             seeMoreBtn.classList.remove('d-none')
+            displayData(data.data.tools.slice(0,6))
         }
-
-        displayData(data.data.tools.slice(0,6))
+        
     } catch (error) {
         console.log('Some Erros occurs:' + error);
     }
