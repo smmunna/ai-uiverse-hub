@@ -104,7 +104,14 @@ const CardDetails = (id) =>{
     const url = `https://openapi.programming-hero.com/api/ai/tool/${id}`
      fetch(url)
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>modalData(data.data))
+}
+
+// Showing the data to the Modal;
+const modalData = (modaldata) =>{
+    console.log(modaldata)
+    const {description,logo,pricing,tool_name,use_cases,integrations,input_output_examples} = modaldata;
+    
 }
 
 // Call the aiUniverseData function;
