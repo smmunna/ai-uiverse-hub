@@ -4,6 +4,13 @@ const aiUniverseData = async () => {
     try {
         const res = await fetch(url)
         const data = await res.json()
+
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+
+        if(data.data.tools.length>6){
+            seeMoreBtn.classList.remove('d-none')
+        }
+
         displayData(data.data.tools.slice(0,6))
     } catch (error) {
         console.log('Some Erros occurs:' + error);
