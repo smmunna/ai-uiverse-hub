@@ -19,7 +19,7 @@ const aiUniverseData = async () => {
 
 // Data pass to the Frontend;
 const displayData = (data) => {
-    //console.log(data);
+     //console.log(data);
 
     // Loading Spinner Activity;
     const loadingSpinnerSection = document.getElementById('loadingSpinner');
@@ -31,15 +31,19 @@ const displayData = (data) => {
         loadingSpinnerSection.appendChild(loadingSpinner);
     }
     else {
+
+        
+
         // Main divContainer;
         const divContainer = document.getElementById('divContainer');
         divContainer.innerHTML='';
         // fetching the each arrayList;
         data.forEach(aiHub => {
-            console.log(aiHub)
+            //console.log(aiHub)
+           
             // Destructuring the array;
             const { description, id, image, name, published_in, features, links } = aiHub;
-            //console.log(features)
+            
             // Create a div for inserting element to the divContainer;
             const div = document.createElement('div');
             div.classList.add('col');
@@ -49,8 +53,10 @@ const displayData = (data) => {
                     <div class="card-body">
                         <h5 class="card-title">Features</h5>
                         <div>
-                            <ol id="listItem">
-                            
+                            <ol type="1" id="listItem">
+                            <li>${features[0]?features[0]:'<b class="text-danger">No Data Found</b>'}</li>
+                            <li>${features[1]?features[1]:'<b class="text-danger">No Data Found</b>'}</li>
+                            <li>${features[2]?features[2]:'<b class="text-danger">No Data Found</b>'}</li>
                             </ol>
                         </div>
                         <hr>
