@@ -51,14 +51,19 @@ const displayData = (data) => {
             </div>
             <hr>
             <h5>${name}</h5>
+            <div class="d-flex justify-content-between">
             <div class="d-flex gap-2 justify-content-start">
-                <div class="date-img">
-                    <img src="../images/date.png" />
-                </div>
-                <div class="publish-data">
-                    <p>${published_in}</p>
-                </div>
-                
+            <div class="date-img">
+                <img src="../images/date.png" />
+            </div>
+            <div class="publish-data">
+                <p>${published_in}</p>
+            </div>
+            
+        </div>
+        <div>
+            <button><span class="right-arrow"><img src="../images/right-arrow.png" /></span></button>
+        </div>
             </div>
           </div>
         </div>
