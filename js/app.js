@@ -42,30 +42,29 @@ const displayData = (data) => {
             div.innerHTML = `
         <div class="card p-3">
           <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Features</h5>
-            <div>
-                <ol id="listItem">
-                
-                </ol>
-            </div>
-            <hr>
-            <h5>${name}</h5>
-            <div class="d-flex justify-content-between">
-            <div class="d-flex gap-2 justify-content-start">
-            <div class="date-img">
-                <img src="../images/date.png" />
-            </div>
-            <div class="publish-data">
-                <p>${published_in}</p>
-            </div>
+            <div class="card-body">
+                <h5 class="card-title">Features</h5>
+                <div>
+                    <ol id="listItem">
+                    
+                    </ol>
+                </div>
+                <hr>
+                <h5>${name}</h5>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 justify-content-start">
+                    <div class="date-img">
+                        <img src="../images/date.png" />
+                    </div>
+                    <div class="publish-data">
+                        <p>${published_in}</p>
+                    </div>
             
-        </div>
-        <div>
-            <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
-        </div>
+                </div>
+                <div>
+                    <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
+                </div>
             </div>
-          </div>
         </div>
         `
             // Inserted to the divContainer
