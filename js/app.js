@@ -69,7 +69,7 @@ const displayData = (data) => {
                     
                         </div>
                         <div>
-                            <button onclick="CardDetails('${id}')" class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
+                            <button onclick="CardDetails('${id}')" class="right-arrow" data-bs-toggle="modal" data-bs-target="#exampleModal"><span><img src="../images/right-arrow.png" /></span></button>
                         </div>
                     </div>
                 </div>
