@@ -40,8 +40,8 @@ const displayData = (data) => {
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
-        <div class="card">
-          <img src="${image ? image : '../images/error.gif'}" class="card-img-top" alt="...">
+        <div class="card p-3">
+          <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
           <div class="card-body">
             <h5 class="card-title">Features</h5>
             <div>
@@ -50,7 +50,7 @@ const displayData = (data) => {
                 </ol>
             </div>
             <hr>
-            <h3>${name}</h3>
+            <h5>${name}</h5>
             <div class="d-flex gap-2 justify-content-start">
                 <div class="date-img">
                     <img src="../images/date.png" />
