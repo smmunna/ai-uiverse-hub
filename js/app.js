@@ -111,7 +111,7 @@ const CardDetails = (id) =>{
 const modalData = (modaldata) =>{
     console.log(modaldata)
     const {description,logo,pricing,tool_name,use_cases,integrations,input_output_examples} = modaldata;
-    
+    document.getElementById('leftCardTitle').innerText = description;
 }
 
 // Call the aiUniverseData function;
