@@ -10,8 +10,7 @@ const aiUniverseData = async () => {
         if(data.data.tools.length>6){
             seeMoreBtn.classList.remove('d-none')
             displayData(data.data.tools.slice(0,6))
-        }
-        
+        }   
     } catch (error) {
         console.log('Some Erros occurs:' + error);
     }
@@ -31,53 +30,47 @@ const displayData = (data) => {
         loadingSpinnerSection.appendChild(loadingSpinner);
     }
     else {
-
         // Main divContainer;
         const divContainer = document.getElementById('divContainer');
-
         // fetching the each arrayList;
         data.forEach(aiHub => {
             //console.log(aiHub)
-
             // Destructuring the array;
             const { description, id, image, name, published_in, features, links } = aiHub;
-
             console.log(features)
             // Create a div for inserting element to the divContainer;
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
-        <div class="card p-3">
-          <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Features</h5>
-                <div>
-                    <ol id="listItem">
+                <div class="card p-3">
+                    <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Features</h5>
+                        <div>
+                            <ol id="listItem">
+                            
+                            </ol>
+                        </div>
+                        <hr>
+                        <h5>${name}</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex gap-2 justify-content-start">
+                            <div class="date-img">
+                                <img src="../images/date.png" />
+                            </div>
+                            <div class="publish-data">
+                                <p>${published_in}</p>
+                            </div>
                     
-                    </ol>
-                </div>
-                <hr>
-                <h5>${name}</h5>
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex gap-2 justify-content-start">
-                    <div class="date-img">
-                        <img src="../images/date.png" />
+                        </div>
+                        <div>
+                            <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
+                        </div>
                     </div>
-                    <div class="publish-data">
-                        <p>${published_in}</p>
-                    </div>
-            
                 </div>
-                <div>
-                    <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
-                </div>
-            </div>
-        </div>
         `
             // Inserted to the divContainer
             divContainer.appendChild(div);
-
-
         })
 
 
