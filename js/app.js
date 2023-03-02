@@ -80,7 +80,6 @@ const displayData = (data) => {
 }
 
 // See More button Functionality;
-
     document.getElementById('seeMore').addEventListener('click',function(){
         const seeMore = async() =>{
             const url = `https://openapi.programming-hero.com/api/ai/tools`;
