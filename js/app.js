@@ -74,8 +74,13 @@ const displayData = (data) => {
             divContainer.appendChild(div);
         })
 
-
+       
     }
+}
+
+// See More button Functionality;
+const seeMore = () =>{
+    console.log('okkau')
 }
 
 // Call the aiUniverseData function;
