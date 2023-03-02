@@ -12,7 +12,7 @@ const aiUniverseData = async() =>{
 
 // Data pass to the Frontend;
 const displayData = (data) =>{
-    console.log(data);
+    //console.log(data);
 
     // Loading Spinner Activity;
     const loadingSpinnerSection = document.getElementById('loadingSpinner');
@@ -23,14 +23,25 @@ const displayData = (data) =>{
         `;
         loadingSpinnerSection.appendChild(loadingSpinner);
     }
-
+    else{
+        
     // Main divContainer;
     const divContainer = document.getElementById('divContainer');
 
     // fetching the each arrayList;
     data.forEach(aiHub=>{
-        //console.log(aiHub)
+        console.log(aiHub)
+
+        // Create a div for inserting element to the divContainer;
+        const div = document.createElement('div');
+        div.classList.add('col');
+        div.innerHTML = `
+            
+        `
     })
+
+
+    }
 }
 
 // Call the aiUniverseData function;
