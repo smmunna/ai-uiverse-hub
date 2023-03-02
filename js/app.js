@@ -69,7 +69,7 @@ const displayData = (data) => {
                     
                         </div>
                         <div>
-                            <button class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
+                            <button onclick="CardDetails('${id}')" class="right-arrow"><span><img src="../images/right-arrow.png" /></span></button>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,14 @@ const displayData = (data) => {
         seeMore();
     });
 
+// Details of a Card;
+const CardDetails = (id) =>{
+    
+    const url = `https://openapi.programming-hero.com/api/ai/tool/${id}`
+     fetch(url)
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+}
 
 // Call the aiUniverseData function;
 aiUniverseData();
