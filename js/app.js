@@ -15,13 +15,13 @@ const displayData = (data) =>{
     console.log(data);
 
     // Loading Spinner Activity;
-    const loadinSpinner = document.getElementById('loadinSpinner');
+    const loadingSpinnerSection = document.getElementById('loadingSpinner');
     const loadingSpinner = document.getElementById('loading-spinner');
     if(data.length<0){
         loadingSpinner.innerHTML = `
         <img src="images/loading-spinner.gif" alt="" srcset="">
         `;
-        loadinSpinner.appendChild(loadingSpinner);
+        loadingSpinnerSection.appendChild(loadingSpinner);
     }
 
     // Main divContainer;
