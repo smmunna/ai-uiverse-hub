@@ -31,9 +31,6 @@ const displayData = (data) => {
         loadingSpinnerSection.appendChild(loadingSpinner);
     }
     else {
-
-        
-
         // Main divContainer;
         const divContainer = document.getElementById('divContainer');
         divContainer.innerHTML='';
