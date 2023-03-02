@@ -30,16 +30,19 @@ const displayData = (data) =>{
 
     // fetching the each arrayList;
     data.forEach(aiHub=>{
-        console.log(aiHub)
+        //console.log(aiHub)
 
+        // Destructuring the array;
+        const {description,id,image,name,published_in,features,links} = aiHub;
+       
         // Create a div for inserting element to the divContainer;
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="${image ? image:'../images/error.gif' }" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Features</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
