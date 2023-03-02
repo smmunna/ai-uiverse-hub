@@ -13,6 +13,14 @@ const aiUniverseData = async() =>{
 // Data pass to the Frontend;
 const displayData = (data) =>{
     console.log(data);
+
+    // Main divContainer;
+    const divContainer = document.getElementById('divContainer');
+
+    // fetching the each arrayList;
+    data.forEach(aiHub=>{
+        console.log(aiHub)
+    })
 }
 
 // Call the aiUniverseData function;
