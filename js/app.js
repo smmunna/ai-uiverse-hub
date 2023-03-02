@@ -14,12 +14,22 @@ const aiUniverseData = async() =>{
 const displayData = (data) =>{
     console.log(data);
 
+    // Loading Spinner Activity;
+    const loadinSpinner = document.getElementById('loadinSpinner');
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if(data.length<0){
+        loadingSpinner.innerHTML = `
+        <img src="images/loading-spinner.gif" alt="" srcset="">
+        `;
+        loadinSpinner.appendChild(loadingSpinner);
+    }
+
     // Main divContainer;
     const divContainer = document.getElementById('divContainer');
 
     // fetching the each arrayList;
     data.forEach(aiHub=>{
-        console.log(aiHub)
+        //console.log(aiHub)
     })
 }
 
