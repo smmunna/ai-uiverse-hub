@@ -36,7 +36,7 @@ const displayData = (data) => {
         divContainer.innerHTML='';
         // fetching the each arrayList;
         data.forEach(aiHub => {
-            //console.log(aiHub)
+            console.log(aiHub)
             // Destructuring the array;
             const { description, id, image, name, published_in, features, links } = aiHub;
             //console.log(features)
