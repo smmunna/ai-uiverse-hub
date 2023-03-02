@@ -4,7 +4,7 @@ const aiUniverseData = async () => {
     try {
         const res = await fetch(url)
         const data = await res.json()
-        displayData(data.data.tools)
+        displayData(data.data.tools.slice(0,6))
     } catch (error) {
         console.log('Some Erros occurs:' + error);
     }
