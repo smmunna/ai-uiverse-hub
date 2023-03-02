@@ -5,6 +5,7 @@ const aiUniverseData = async () => {
         const res = await fetch(url)
         const data = await res.json()
 
+        // See More Button Enable & Disable functionality;
         const seeMoreBtn = document.getElementById('seeMoreBtn');
 
         if(data.data.tools.length>6){
