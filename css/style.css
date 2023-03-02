@@ -5,3 +5,12 @@
     height: 5vw;
     width: 5vw;
 }
+
+/* Date Img */
+.date-img img{
+    height: 20px;
+    width: 20px;
+}
+.publish-data{
+    padding-top: 2px;
+}
