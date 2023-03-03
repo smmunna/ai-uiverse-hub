@@ -125,24 +125,27 @@ const modalData = (modaldata) =>{
     divPricing.innerHTML = `
     <div class="col">
     <div class="card">
-      <div class="card-body">
+      <div class="card-body p-4 p-lg-1 text-center">
         <h5 class="card-title text-success">${pricing[0].price}</h5>
+        <h5 class="card-title text-success">${pricing[0].plan}</h5>
       </div>
     </div>
   </div> 
 
   <div class="col">
   <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+    <div class="card-body p-4 p-lg-1 text-center">
+    <h5 class="card-title text-warning">${pricing[1].price}</h5>
+    <h5 class="card-title text-warning">${pricing[1].plan}</h5>
     </div>
   </div>
 </div> 
 
 <div class="col">
 <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+  <div class="card-body p-4 p-lg-1 text-center">
+    <h5 class="card-title text-danger">${pricing[2].price}</h5>
+    <h5 class="card-title text-danger">${pricing[2].plan}</h5>
   </div>
 </div>
 </div> 
