@@ -22,16 +22,7 @@ const displayData = (data) => {
 
     //console.log(data)
 
-    // Loading Spinner Activity;
-    const loadingSpinnerSection = document.getElementById('loadingSpinner');
-    const loadingSpinner = document.getElementById('loading-spinner');
-    if (data.length < 0) {
-        loadingSpinner.innerHTML = `
-        <img src="images/loading-spinner.gif" alt="" srcset="">
-        `;
-        loadingSpinnerSection.appendChild(loadingSpinner);
-    }
-    else {
+    
         // Main divContainer;
         const divContainer = document.getElementById('divContainer');
         divContainer.innerHTML = '';
@@ -80,9 +71,6 @@ const displayData = (data) => {
             // Inserted to the divContainer
             divContainer.appendChild(div);
         })
-
-
-    }
 }
 
 // See More button Functionality;
