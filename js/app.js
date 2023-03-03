@@ -123,7 +123,29 @@ const modalData = (modaldata) =>{
 
     const divPricing = document.getElementById('pricing');
     divPricing.innerHTML = `
-    
+    <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+    </div>
+  </div>
+</div> 
+
+<div class="col">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+  </div>
+</div>
+</div> 
     `
 }
 
