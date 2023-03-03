@@ -28,10 +28,16 @@
 .modal{
     position: relative;
 }
-.modal-header{
+.modal-header {
     position: absolute;
-    margin: 10% 30% 20% 92%;
+    margin: 8% 0% 0% 93%;
     z-index: 2;
+}
+.modal-header button{
+    background-color: red;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 #leftCardTitle{
