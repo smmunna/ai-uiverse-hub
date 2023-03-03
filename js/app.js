@@ -112,8 +112,8 @@ const CardDetails = (id) => {
 
 // Showing the data to the Modal;
 const modalData = (modaldata) => {
-    //console.log(modaldata)
-    const { description, image_link, pricing, tool_name, use_cases, integrations, input_output_examples, features } = modaldata;
+    console.log(modaldata)
+    const { description, image_link, pricing, tool_name, use_cases, integrations, input_output_examples, features,accuracy } = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML = `
@@ -121,6 +121,12 @@ const modalData = (modaldata) => {
             <div class="card-body">
                 <h5 class="card-title text-center">${input_output_examples[0].input}</h5>
                 <p class="card-text text-center">${input_output_examples[0].output}</p>
+                <div>
+                    ${
+                        accuracy.score*100>80 ? accuracy.score*100 : '<button class="btn btn-danger">Accuracy very Low</button>'
+                    }
+                    
+                </div>
             </div>
     `;
 
