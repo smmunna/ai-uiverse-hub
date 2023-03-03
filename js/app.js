@@ -110,14 +110,14 @@ const CardDetails = (id) =>{
 // Showing the data to the Modal;
 const modalData = (modaldata) =>{
     console.log(modaldata)
-    const {description,logo,pricing,tool_name,use_cases,integrations,input_output_examples} = modaldata;
+    const {description,image_link,pricing,tool_name,use_cases,integrations,input_output_examples} = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML =`
-         <img src="${logo ? 'Nothing':'Okayy'}" class="card-img-top" alt="...">
+         <img src="${image_link[0] ? image_link[0]:'Okayy'}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">${tool_name}</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title text-center">${input_output_examples[0].input}</h5>
+                <p class="card-text text-center">${input_output_examples[0].output}</p>
             </div>
     `;
 }
