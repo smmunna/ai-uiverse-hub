@@ -1,13 +1,13 @@
 /* Responsive Design */
 
  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
- @media (min-width: 1399.98px) and (max-width:2500px) { 
+ @media (min-width: 1400.98px) and (max-width:2500px) { 
     .accuracy {
-        margin-left: 24.3vw;
+        margin-left: 22.7vw;
     }
 
     .modal-header {
-        margin: 7.9% 0% 0% 87%;
+        margin: 3% 0% 0% 85.5%;
     }
 
 }
