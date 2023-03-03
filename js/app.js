@@ -120,6 +120,11 @@ const modalData = (modaldata) =>{
                 <p class="card-text text-center">${input_output_examples[0].output}</p>
             </div>
     `;
+
+    const divPricing = document.getElementById('pricing');
+    divPricing.innerHTML = `
+    
+    `
 }
 
 // Call the aiUniverseData function;
