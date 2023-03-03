@@ -1,72 +1,76 @@
-
-
 /* Loading Spinner Styls */
-#loading-spinner img{
+#loading-spinner img {
     height: 5vw;
     width: 5vw;
 }
 
 /* Date Img */
-.date-img img{
+.date-img img {
     height: 20px;
     width: 20px;
 }
-.publish-data{
+
+.publish-data {
     padding-top: 2px;
 }
-.right-arrow{
+
+.right-arrow {
     border: hidden;
     background-color: rgba(255, 0, 0, 0.174);
     border-radius: 50%;
 }
-.right-arrow img{
+
+.right-arrow img {
     height: 30px;
     padding: 8px;
 }
 
 /*  */
-.modal{
+.modal {
     position: relative;
 }
+
 .modal-header {
     position: absolute;
     margin: 2.5% 0% 0% 85%;
     z-index: 2;
 }
-.modal-header button{
+
+.modal-header button {
     background-color: red;
     border-radius: 50%;
     height: 50px;
     width: 50px;
 }
 
-#leftCardTitle{
+#leftCardTitle {
     line-height: 1.5;
 }
 
 /* Modal Accuracy */
-#right-div{
+#right-div {
     position: relative;
 }
+
 .accuracy {
     position: absolute;
     margin-left: 22.7vw;
 }
 
-.modal-card1{
-    background-color:rgba(235, 87, 87, 0.05);
+.modal-card1 {
+    background-color: rgba(235, 87, 87, 0.05);
 }
 
 .pricing-card {
-    border: hidden!important;
+    border: hidden !important;
 }
 
-.featureInte{
+.featureInte {
     background-color: rgba(235, 87, 87, 0.05);
 }
 
 /* Main Card Edition */
-.mainCard{
-    border: hidden!important;
+.mainCard {
+    border: hidden !important;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
