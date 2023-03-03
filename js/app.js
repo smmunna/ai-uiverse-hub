@@ -134,7 +134,7 @@ const modalData = (modaldata) => {
     const divPricing = document.getElementById('pricing');
     divPricing.innerHTML = `
     <div class="col">
-    <div class="card py-3 pricing-card">
+    <div class="card py-3 pricing-card ">
       <div class="card-body p-4  p-lg-1 text-center">
         <h5 class="card-title text-success">${pricing[0].price}</h5>
         <h5 class="card-title text-success">${pricing[0].plan}</h5>
@@ -143,7 +143,7 @@ const modalData = (modaldata) => {
   </div> 
 
   <div class="col">
-  <div class="card py-3">
+  <div class="card py-3 pricing-card">
     <div class="card-body p-4  p-lg-1 text-center">
     <h5 class="card-title text-warning">${pricing[1].price}</h5>
     <h5 class="card-title text-warning">${pricing[1].plan}</h5>
@@ -152,7 +152,7 @@ const modalData = (modaldata) => {
 </div> 
 
 <div class="col">
-<div class="card py-1">
+<div class="card py-1 pricing-card">
   <div class="card-body p-4 p-lg-1 text-center">
     <h5 class="card-title text-danger">${pricing[2].price}</h5>
     <h5 class="card-title text-danger">${pricing[2].plan}</h5>
@@ -165,8 +165,8 @@ const modalData = (modaldata) => {
     const featureIntegration = document.getElementById('featureItegration');
     featureIntegration.innerHTML = `
     <div class="col">
-    <div class="card">
-      <div class="card-body p-1">
+    <div class="card pricing-card ">
+      <div class="card-body p-1 featureInte">
         <h2 class="card-title fw-bold">Feature</h2>
         <ul>
         <li>${features[1].feature_name} </li>
@@ -178,8 +178,8 @@ const modalData = (modaldata) => {
   </div> 
 
   <div class="col">
-  <div class="card">
-    <div class="card-body p-1 ">
+  <div class="card pricing-card ">
+    <div class="card-body p-1 featureInte">
     <h2 class="card-title fw-bold">Integration</h2>
         <ul>
         <li>${integrations[0] ? integrations[0]: '<b class="text-danger">No Data Found</b>'} </li>

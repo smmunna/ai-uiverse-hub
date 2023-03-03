@@ -1,14 +1,58 @@
-/* Tablet and LandScape Mode Device */
-@media only screen and (min-width:577px) and (max-width:992px){
+/* Responsive Design */
+
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+ @media (min-width: 1399.98px) and (max-width:2500px) { 
+    .accuracy {
+        margin-left: 24.3vw;
+    }
+
+    .modal-header {
+        margin: 7.9% 0% 0% 87%;
+    }
+
+}
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+ @media (max-width: 1399.98px) { 
+    .accuracy {
+        margin-left: 25vw;
+    }
+    .modal-header {
+        margin: 7.9% 0% 0% 88%;
+    }
+  }
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.98px) {
+    .accuracy {
+        margin-left: 15vw;
+    }
+    .modal-header {
+        margin: 2.9% 0% 0% 80%;
+    }
+   }
+
+ /* `lg` applies to medium devices (tablets, less than 992px) */
+ @media (max-width: 991.98px) { 
+    .accuracy {
+        margin-left: 6.6vw;
+    }
+    .modal-header {
+        margin: 0.5% 0% 0% 73%;
+    }
+  }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) {
     .accuracy {
         margin-left: 9.6vw;
     }
     .modal-header {
         margin: 0.5% 0% 0% 80%;
     }
-}
-/* Mobile and Potrait Mode Device */
-@media only screen and (max-width:576px){
+  }
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
     .accuracy {
         margin-left: 48.6vw;
     }
@@ -21,4 +65,4 @@
         height: 20px;
         width: 20px;
     }
-}
+   }

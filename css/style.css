@@ -56,3 +56,11 @@
 .modal-card1{
     background-color:rgba(235, 87, 87, 0.05);
 }
+
+.pricing-card {
+    border: hidden!important;
+}
+
+.featureInte{
+    background-color: rgba(235, 87, 87, 0.05);
+}
