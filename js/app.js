@@ -19,7 +19,8 @@ const aiUniverseData = async () => {
 
 // Data pass to the Frontend;
 const displayData = (data) => {
-     //console.log(data);
+    
+     console.log(data)
     
     // Loading Spinner Activity;
     const loadingSpinnerSection = document.getElementById('loadingSpinner');
@@ -41,6 +42,8 @@ const displayData = (data) => {
             // Destructuring the array;
             const { description, id, image, name, published_in, features, links } = aiHub;
             
+            //console.log(published_in)
+
             // Create a div for inserting element to the divContainer;
             const div = document.createElement('div');
             div.classList.add('col');
