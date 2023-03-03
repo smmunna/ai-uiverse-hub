@@ -30,7 +30,7 @@
 }
 .modal-header {
     position: absolute;
-    margin: 8% 0% 0% 93%;
+    margin: 2.5% 0% 0% 85%;
     z-index: 2;
 }
 .modal-header button{
@@ -50,5 +50,5 @@
 }
 .accuracy {
     position: absolute;
-    margin-left: 27.7vw;
+    margin-left: 22.7vw;
 }
