@@ -199,7 +199,7 @@ document.getElementById('sortByDate').addEventListener('click', function () {
             const seeMoreBtn = document.getElementById('seeMoreBtn');
             if (mainData.length > 6) {
                 seeMoreBtn.classList.remove('d-none')
-                displayData(mainData.slice(0, 6))
+                displayData(mainData)
             }
         } catch (error) {
             console.log('Error may ocuurs;' + error)
