@@ -126,7 +126,7 @@ const modalData = (modaldata) =>{
     <div class="col">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title text-success">${pricing[0].price}</h5>
       </div>
     </div>
   </div> 
