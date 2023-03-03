@@ -1,0 +1,12 @@
+/* Tablet and LandScape Mode Device */
+@media only screen and (min-width:577px) and (max-width:992px){
+    .accuracy {
+        margin-left: 9.6vw;
+    }
+}
+/* Mobile and Potrait Mode Device */
+@media only screen and (max-width:576px){
+    .accuracy {
+        margin-left: 54.6vw;
+    }
+}
