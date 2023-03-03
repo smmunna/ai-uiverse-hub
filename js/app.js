@@ -201,5 +201,13 @@ document.getElementById('sortByDate').addEventListener('click', function () {
     sortByDate()
 })
 
+// Spinner Activity;
+const isLoading = spinnerLoading =>{
+    const spinner = document.getElementById('loading-spinner');
+    if(spinnerLoading){
+        spinner.classList.remove('d-none');
+    }
+}
+
 // Call the aiUniverseData function;
 aiUniverseData();
