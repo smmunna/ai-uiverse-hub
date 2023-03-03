@@ -25,11 +25,13 @@
 }
 
 /*  */
-.modal-header{
+.modal{
     position: relative;
 }
-.modal-close-btn{
-    background-color: red;
+.modal-header{
+    position: absolute;
+    margin: 10% 30% 20% 92%;
+    z-index: 2;
 }
 
 #leftCardTitle{
