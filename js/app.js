@@ -134,7 +134,7 @@ const modalData = (modaldata) => {
     const divPricing = document.getElementById('pricing');
     divPricing.innerHTML = `
     <div class="col">
-    <div class="card py-3">
+    <div class="card py-3 pricing-card">
       <div class="card-body p-4  p-lg-1 text-center">
         <h5 class="card-title text-success">${pricing[0].price}</h5>
         <h5 class="card-title text-success">${pricing[0].plan}</h5>
