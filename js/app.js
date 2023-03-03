@@ -112,7 +112,7 @@ const CardDetails = (id) => {
 
 // Showing the data to the Modal;
 const modalData = (modaldata) => {
-    console.log(modaldata)
+    //console.log(modaldata)
     const { description, image_link, pricing, tool_name, use_cases, integrations, input_output_examples, features,accuracy } = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
