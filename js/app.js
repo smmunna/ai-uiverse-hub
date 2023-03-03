@@ -121,7 +121,7 @@ const modalData = (modaldata) => {
             <div class="card-body">
                 <h5 class="card-title text-center">${input_output_examples[0].input}</h5>
                 <p class="card-text text-center">${input_output_examples[0].output}</p>
-                <div>
+                <div class="accuracy">
                     ${
                         accuracy.score*100>80 ? accuracy.score*100 : '<button class="btn btn-danger">Accuracy very Low</button>'
                     }
