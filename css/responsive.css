@@ -10,6 +10,15 @@
 /* Mobile and Potrait Mode Device */
 @media only screen and (max-width:576px){
     .accuracy {
-        margin-left: 54.6vw;
+        margin-left: 48.6vw;
+    }
+    .modal-header {
+        margin: 2% 0% 0% 80%;
+    }
+    .modal-header button{
+        background-color: red;
+       
+        height: 20px;
+        width: 20px;
     }
 }
