@@ -114,7 +114,7 @@ const modalData = (modaldata) =>{
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML =`
-         <img src="${image_link[0] ? image_link[0]:'Okayy'}" class="card-img-top" alt="...">
+         <img src="${image_link[0] ? image_link[0]:'Not Found Image'}" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <h5 class="card-title text-center">${input_output_examples[0].input}</h5>
                 <p class="card-text text-center">${input_output_examples[0].output}</p>
