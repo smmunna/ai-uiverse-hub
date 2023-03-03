@@ -175,9 +175,9 @@ const modalData = (modaldata) => {
     <div class="card-body p-1 ">
     <h2 class="card-title fw-bold">Integration</h2>
         <ul>
-        <li>${integrations[0]} </li>
-        <li>${integrations[1]} </li>
-        <li>${integrations[2]} </li>
+        <li>${integrations[0] ? integrations[0]: '<b class="text-danger">No Data Found</b>'} </li>
+        <li>${integrations[1] ? integrations[1]: '<b class="text-danger">No Data Found</b>'} </li>
+        <li>${integrations[2] ? integrations[2]: '<b class="text-danger">No Data Found</b>'} </li>
         </ul>
     </div>
   </div>
