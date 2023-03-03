@@ -8,6 +8,12 @@ const aiUniverseData = async () => {
         // See More Button Enable & Disable functionality;
         const seeMoreBtn = document.getElementById('seeMoreBtn');
 
+        // Spinner Activity;
+        const spinner = document.getElementById('loading-spinner');
+        if(data.data.tools.length<0){
+            spinner.classList.remove('d-none');
+        }
+
         if (data.data.tools.length > 6) {
             seeMoreBtn.classList.remove('d-none')
             displayData(data.data.tools.slice(0, 6))
