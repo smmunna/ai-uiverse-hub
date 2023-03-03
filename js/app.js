@@ -110,7 +110,7 @@ const CardDetails = (id) =>{
 // Showing the data to the Modal;
 const modalData = (modaldata) =>{
     console.log(modaldata)
-    const {description,image_link,pricing,tool_name,use_cases,integrations,input_output_examples} = modaldata;
+    const {description,image_link,pricing,tool_name,use_cases,integrations,input_output_examples,features} = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML =`
@@ -148,6 +148,36 @@ const modalData = (modaldata) =>{
     <h5 class="card-title text-danger">${pricing[2].plan}</h5>
   </div>
 </div>
+</div> 
+    `
+
+    // Feature and Integration;
+    const featureIntegration = document.getElementById('featureItegration');
+    featureIntegration.innerHTML = `
+    <div class="col">
+    <div class="card">
+      <div class="card-body p-1">
+        <h2 class="card-title fw-bold">Feature</h2>
+        <ul>
+        <li>${features[1].feature_name} </li>
+        <li>${features[2].feature_name} </li>
+        <li>${features[3].feature_name} </li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col">
+  <div class="card">
+    <div class="card-body p-1 ">
+    <h2 class="card-title fw-bold">Integration</h2>
+        <ul>
+        <li>${integrations[0]} </li>
+        <li>${integrations[1]} </li>
+        <li>${integrations[2]} </li>
+        </ul>
+    </div>
+  </div>
 </div> 
     `
 }
