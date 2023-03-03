@@ -185,5 +185,29 @@ const modalData = (modaldata) =>{
     `
 }
 
+// Sort by Date;
+document.getElementById('sortByDate').addEventListener('click',function(){
+    const sortByDate = async()=>{
+        const url = `https://openapi.programming-hero.com/api/ai/tools`;
+        try {
+            const res = await fetch(url)
+            const data = await res.json()
+            const mainData =data.data.tools;
+            mainData.sort((a, b) => new Date(a.published_in) - new Date(b.published_in));
+            
+            // See More Button Enable & Disable functionality;
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+
+        if(mainData.length>6){
+            seeMoreBtn.classList.remove('d-none')
+            displayData(data.data.tools.slice(0,6))
+        }   
+        } catch (error) {
+            console.log('Error may ocuurs;'+error)
+        }
+    }
+    sortByDate()
+})
+
 // Call the aiUniverseData function;
 aiUniverseData();
