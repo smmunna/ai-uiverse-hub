@@ -23,23 +23,23 @@ const displayData = (data) => {
 
     //console.log(data)
 
-    
-        // Main divContainer;
-        const divContainer = document.getElementById('divContainer');
-        divContainer.innerHTML = '';
-        // fetching the each arrayList;
-        data.forEach(aiHub => {
-            //console.log(aiHub)
 
-            // Destructuring the array;
-            const { description, id, image, name, published_in, features, links } = aiHub;
+    // Main divContainer;
+    const divContainer = document.getElementById('divContainer');
+    divContainer.innerHTML = '';
+    // fetching the each arrayList;
+    data.forEach(aiHub => {
+        //console.log(aiHub)
 
-            //console.log(published_in)
+        // Destructuring the array;
+        const { description, id, image, name, published_in, features, links } = aiHub;
 
-            // Create a div for inserting element to the divContainer;
-            const div = document.createElement('div');
-            div.classList.add('col');
-            div.innerHTML = `
+        //console.log(published_in)
+
+        // Create a div for inserting element to the divContainer;
+        const div = document.createElement('div');
+        div.classList.add('col');
+        div.innerHTML = `
                 <div class="card p-3 mainCard">
                     <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
                     <div class="card-body">
@@ -69,12 +69,12 @@ const displayData = (data) => {
                     </div>
                 </div>
         `
-            // Inserted to the divContainer
-            divContainer.appendChild(div);
+        // Inserted to the divContainer
+        divContainer.appendChild(div);
 
-            // Spinner Stop after Loading the Data Successfullyl;
-            isLoading(false);
-        })
+        // Spinner Stop after Loading the Data Successfullyl;
+        isLoading(false);
+    })
 }
 
 // See More button Functionality;
@@ -207,12 +207,12 @@ document.getElementById('sortByDate').addEventListener('click', function () {
 })
 
 // Spinner Activity;
-const isLoading = spinnerLoading =>{
+const isLoading = spinnerLoading => {
     const spinner = document.getElementById('loading-spinner');
-    if(spinnerLoading){
+    if (spinnerLoading) {
         spinner.classList.remove('d-none');
     }
-    else{
+    else {
         spinner.classList.add('d-none');
     }
 }
