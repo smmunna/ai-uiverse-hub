@@ -35,3 +35,11 @@
 #leftCardTitle{
     line-height: 1.5;
 }
+
+/* Modal Accuracy */
+#right-div{
+    position: relative;
+}
+.accuracy{
+    position: absolute;
+}
