@@ -113,15 +113,14 @@ const CardDetails = (id) => {
 // Showing the data to the Modal;
 const modalData = (modaldata) => {
     //console.log(modaldata)
-    const { description, image_link, pricing, tool_name, use_cases, integrations, input_output_examples, features,accuracy } = modaldata;
+    const { description, image_link, pricing, tool_name, use_cases, integrations, input_output_examples, features, accuracy } = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML = `
          <img src="${image_link[0] ? image_link[0] : 'Not Found Image'}" class="card-img-top rounded" alt="...">
          <div class="accuracy">
-                    ${
-                        accuracy.score*100>80 ? '<button class="btn btn-success">Accuracy: '+accuracy.score*100+'%</button>' : '<button class="btn btn-danger">Accuracy Low</button>'
-                    }
+                    ${accuracy.score * 100 > 80 ? '<button class="btn btn-success">Accuracy: ' + accuracy.score * 100 + '%</button>' : '<button class="btn btn-danger">Accuracy Low</button>'
+        }
                     
                 </div>
             <div class="card-body">
@@ -182,9 +181,9 @@ const modalData = (modaldata) => {
     <div class="card-body p-1 featureInte">
     <h2 class="card-title fw-bold">Integration</h2>
         <ul>
-        <li>${integrations[0] ? integrations[0]: '<b class="text-danger">No Data Found</b>'} </li>
-        <li>${integrations[1] ? integrations[1]: '<b class="text-danger">No Data Found</b>'} </li>
-        <li>${integrations[2] ? integrations[2]: '<b class="text-danger">No Data Found</b>'} </li>
+        <li>${integrations[0] ? integrations[0] : '<b class="text-danger">No Data Found</b>'} </li>
+        <li>${integrations[1] ? integrations[1] : '<b class="text-danger">No Data Found</b>'} </li>
+        <li>${integrations[2] ? integrations[2] : '<b class="text-danger">No Data Found</b>'} </li>
         </ul>
     </div>
   </div>
