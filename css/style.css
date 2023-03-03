@@ -64,3 +64,9 @@
 .featureInte{
     background-color: rgba(235, 87, 87, 0.05);
 }
+
+/* Main Card Edition */
+.mainCard{
+    border: hidden!important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
