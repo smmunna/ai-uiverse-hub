@@ -120,7 +120,7 @@ const modalData = (modaldata) => {
          <img src="${image_link[0] ? image_link[0] : 'Not Found Image'}" class="card-img-top rounded" alt="...">
          <div class="accuracy">
                     ${
-                        accuracy.score*100>80 ? '<button class="btn btn-success">Accuracy: '+accuracy.score*100+'%</button>' : '<button class="btn btn-danger">Accuracy very Low</button>'
+                        accuracy.score*100>80 ? '<button class="btn btn-success">Accuracy: '+accuracy.score*100+'%</button>' : '<button class="btn btn-danger">Accuracy Low</button>'
                     }
                     
                 </div>
