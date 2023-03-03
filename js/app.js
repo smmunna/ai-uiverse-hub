@@ -48,7 +48,7 @@ const displayData = (data) => {
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
-                <div class="card p-3">
+                <div class="card p-3 mainCard">
                     <img src="${image ? image : '../images/error.gif'}" class="card-img-top rounded" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Features</h5>
