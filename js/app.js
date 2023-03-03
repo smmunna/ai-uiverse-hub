@@ -109,7 +109,7 @@ const CardDetails = (id) =>{
 
 // Showing the data to the Modal;
 const modalData = (modaldata) =>{
-    console.log(modaldata)
+    //console.log(modaldata)
     const {description,image_link,pricing,tool_name,use_cases,integrations,input_output_examples,features} = modaldata;
     document.getElementById('leftCardTitle').innerText = description;
 
@@ -124,8 +124,8 @@ const modalData = (modaldata) =>{
     const divPricing = document.getElementById('pricing');
     divPricing.innerHTML = `
     <div class="col">
-    <div class="card">
-      <div class="card-body p-4 p-lg-1 text-center">
+    <div class="card py-3">
+      <div class="card-body p-4  p-lg-1 text-center">
         <h5 class="card-title text-success">${pricing[0].price}</h5>
         <h5 class="card-title text-success">${pricing[0].plan}</h5>
       </div>
@@ -133,8 +133,8 @@ const modalData = (modaldata) =>{
   </div> 
 
   <div class="col">
-  <div class="card">
-    <div class="card-body p-4 p-lg-1 text-center">
+  <div class="card py-3">
+    <div class="card-body p-4  p-lg-1 text-center">
     <h5 class="card-title text-warning">${pricing[1].price}</h5>
     <h5 class="card-title text-warning">${pricing[1].plan}</h5>
     </div>
@@ -142,7 +142,7 @@ const modalData = (modaldata) =>{
 </div> 
 
 <div class="col">
-<div class="card">
+<div class="card py-1">
   <div class="card-body p-4 p-lg-1 text-center">
     <h5 class="card-title text-danger">${pricing[2].price}</h5>
     <h5 class="card-title text-danger">${pricing[2].plan}</h5>

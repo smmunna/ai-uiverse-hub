@@ -31,3 +31,7 @@
 .modal-close-btn{
     background-color: red;
 }
+
+#leftCardTitle{
+    line-height: 1.5;
+}
