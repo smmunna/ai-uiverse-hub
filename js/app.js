@@ -1,5 +1,7 @@
 // All Data Loads
 const aiUniverseData = async () => {
+    // Spinner Showing for Loading the Data;
+    isLoading(true);
     const url = `https://openapi.programming-hero.com/api/ai/tools`;
     try {
         const res = await fetch(url)
@@ -69,6 +71,9 @@ const displayData = (data) => {
         `
             // Inserted to the divContainer
             divContainer.appendChild(div);
+
+            // Spinner Stop after Loading the Data Successfullyl;
+            isLoading(false);
         })
 }
 
@@ -206,6 +211,9 @@ const isLoading = spinnerLoading =>{
     const spinner = document.getElementById('loading-spinner');
     if(spinnerLoading){
         spinner.classList.remove('d-none');
+    }
+    else{
+        spinner.classList.add('d-none');
     }
 }
 
